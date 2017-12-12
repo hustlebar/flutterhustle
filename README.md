@@ -1,2 +1,2 @@
-# flutterhustle
-Hustle for Flutter
+# Flutter Hustle
+Hustle for Flutter.

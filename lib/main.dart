@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
-import 'src/flutter_hustle.dart';
+import 'package:flutterhustle/src/friendlychat/friendlychat.dart';
+//import 'src/flutter_hustle.dart';
 
-void main() => runApp(new FlutterHustleApp());
+void main() => runApp(new FriendlyChatApp());

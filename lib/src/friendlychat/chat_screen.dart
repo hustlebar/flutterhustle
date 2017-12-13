@@ -49,3 +49,13 @@ class ChatScreenState extends State<ChatScreen> {
     _textController.clear();
   }
 }
+
+class ChatMessage extends StatelessWidget {
+  String message;
+  ChatMessage({this.message});
+
+  @override
+  Widget build(BuildContext context) {
+
+  }
+}

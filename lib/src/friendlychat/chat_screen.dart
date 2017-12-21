@@ -23,25 +23,29 @@ class ChatState extends State<ChatScreen> {
   }
 
   Widget bodyUi() {
-    return new Container(
-      padding: const EdgeInsets.all(10.0),
-      child: new Row(
-        children: <Widget>[
-          new Flexible(
-            child: new TextField(
-              controller: _controller,
-              onSubmitted: onSubmit,
-              decoration: new InputDecoration.collapsed(hintText: "Send a message"),
-            ),
-          ),
 
-          new Container(
-            child: new IconButton(
-              icon: new Icon(Icons.send),
-              onPressed: () => onSubmit(_controller.text)
+    return new IconTheme(
+      data: new IconThemeData(color: Theme.of(context).accentColor),
+      child: new Container(
+        padding: const EdgeInsets.all(10.0),
+        child: new Row(
+          children: <Widget>[
+            new Flexible(
+              child: new TextField(
+                controller: _controller,
+                onSubmitted: onSubmit,
+                decoration: new InputDecoration.collapsed(hintText: "Send a message"),
+              ),
+            ),
+
+            new Container(
+              child: new IconButton(
+                icon: new Icon(Icons.send),
+                onPressed: () => onSubmit(_controller.text)
+              )
             )
-          )
-        ],
+          ],
+        )
       )
     );
   }

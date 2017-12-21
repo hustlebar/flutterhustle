@@ -9,7 +9,7 @@ class ChatScreen extends StatefulWidget {
 }
 
 class ChatState extends State<ChatScreen> {
-  final TextEditingController controller_ = new TextEditingController();
+  final TextEditingController _controller = new TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -24,14 +24,30 @@ class ChatState extends State<ChatScreen> {
 
   Widget bodyUi() {
     return new Container(
-      child: new TextField(
-        controller: controller_,
-        onSubmitted: onSubmit,
-      ),
+      padding: const EdgeInsets.all(10.0),
+      child: new Row(
+        children: <Widget>[
+          new Flexible(
+            child: new TextField(
+              controller: _controller,
+              onSubmitted: onSubmit,
+              decoration: new InputDecoration.collapsed(hintText: "Send a message"),
+            ),
+          ),
+
+          new Container(
+            child: new IconButton(
+              icon: new Icon(Icons.send),
+              onPressed: () => onSubmit(_controller.text)
+            )
+          )
+        ],
+      )
     );
   }
 
   void onSubmit(String text) {
     print("Value ${text}");
+    _controller.clear();
   }
 }

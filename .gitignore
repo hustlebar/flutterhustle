@@ -14,3 +14,4 @@ doc/api/
 .idea
 .metadata
 android.iml
+*.log

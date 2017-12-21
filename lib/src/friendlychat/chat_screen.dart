@@ -35,4 +35,3 @@ class ChatState extends State<ChatScreen> {
     print("Value ${text}");
   }
 }
-

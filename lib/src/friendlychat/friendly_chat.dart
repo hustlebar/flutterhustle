@@ -3,6 +3,7 @@ library friendlychat;
 import 'package:flutter/material.dart';
 
 part 'chat_screen.dart';
+part 'chat_message.dart';
 
 class FriendlyChat extends StatelessWidget {
 

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+part of friendlychat;
 
 class ChatMessage extends StatelessWidget {
   final String message;
@@ -6,12 +6,26 @@ class ChatMessage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new Container(
-      
-    );
+    return buildUi();
   }
 
   Widget buildUi() {
-    return null;
+    return new Container(
+      child: new Row(
+        children: <Widget>[
+          new Container(
+            child: new CircleAvatar(
+              child: new Text("T"),
+            ),
+          ),
+
+          new Column(
+            children: <Widget>[
+              new Text(message)
+            ],
+          )
+        ],
+      ),
+    );
   }
 }

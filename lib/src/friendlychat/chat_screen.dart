@@ -26,7 +26,7 @@ class ChatState extends State<ChatScreen> {
               itemCount: _messages.length,                            //new
             )                                                         //new
           ),                                                          //new
-          new Divider(height: 1.0),                                   //new
+          new Divider(height: 2.0),                                   //new
           new Container(                                              //new
             decoration: new BoxDecoration(
               color: Theme.of(context).cardColor),                   //new

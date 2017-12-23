@@ -73,6 +73,7 @@ class ChatState extends State<ChatScreen> {
     setState(() {
       _messages.insert(0, chatMessage);
     });
+
     _controller.clear();
   }
 }

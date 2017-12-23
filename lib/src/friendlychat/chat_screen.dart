@@ -11,11 +11,17 @@ class ChatScreen extends StatefulWidget {
 class ChatState extends State<ChatScreen> with TickerProviderStateMixin {
   final TextEditingController _controller = new TextEditingController();
   final List<ChatMessage> _messages = <ChatMessage>[];
+  bool _hasFocus = true;
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("Friendlychat")),
+      appBar: new AppBar(
+        title: new Text("Friendlychat"),
+        elevation:
+          Theme.of(context).platform == TargetPlatform.iOS ? 0.0 : 4.0,
+      ),
+
       body: new Column(                                        //modified
         children: <Widget>[                                         //new
           new Flexible(                                               //new
@@ -50,18 +56,27 @@ class ChatState extends State<ChatScreen> with TickerProviderStateMixin {
                 controller: _controller,
                 onSubmitted: onSubmit,
                 decoration: new InputDecoration.collapsed(hintText: "Send a message"),
+                autofocus: _hasFocus,
               ),
             ),
 
             new Container(
-              child: new IconButton(
-                icon: new Icon(Icons.send),
-                onPressed: () => onSubmit(_controller.text)
-              )
+              child: getButton()
             )
           ],
         )
       )
+    );
+  }
+
+  Widget getButton() {
+    return Theme.of(context).platform == TargetPlatform.iOS ?
+      new CupertinoButton(                                       //new
+        child: new Text("Send"),                                 //new
+        onPressed: () => onSubmit(_controller.text)) :
+      new IconButton(                                            //modified
+        icon: new Icon(Icons.send),
+        onPressed: () => onSubmit(_controller.text)
     );
   }
 
@@ -79,7 +94,19 @@ class ChatState extends State<ChatScreen> with TickerProviderStateMixin {
     });
 
     chatMessage.animationController.forward();
+    _hasFocus = true;
 
     _controller.clear();
   }
+
+  @override
+  void dispose() {
+    for (ChatMessage message in _messages) {
+      message.animationController.dispose();
+    }
+
+    super.dispose();
+  }
+
+
 }

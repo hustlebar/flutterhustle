@@ -8,7 +8,7 @@ class ChatScreen extends StatefulWidget {
   }
 }
 
-class ChatState extends State<ChatScreen> {
+class ChatState extends State<ChatScreen> with TickerProviderStateMixin {
   final TextEditingController _controller = new TextEditingController();
   final List<ChatMessage> _messages = <ChatMessage>[];
 
@@ -67,13 +67,19 @@ class ChatState extends State<ChatScreen> {
 
   void onSubmit(String text) {
     ChatMessage chatMessage = new ChatMessage(
-      message: text
+      message: text,
+      animationController: new AnimationController(                  //new
+        duration: new Duration(milliseconds: 700),                   //new
+        vsync: this,                                                 //new
+      )
     );
     
     setState(() {
       _messages.insert(0, chatMessage);
     });
 
+    chatMessage.animationController.forward();
+    
     _controller.clear();
   }
 }

@@ -1,8 +1,10 @@
 part of friendlychat;
 
 class ChatMessage extends StatelessWidget {
+  final AnimationController animationController;
+
   final String message;
-  ChatMessage({this.message});
+  ChatMessage({this.message, this.animationController});
 
   @override
   Widget build(BuildContext context) {

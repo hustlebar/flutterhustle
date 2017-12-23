@@ -79,7 +79,7 @@ class ChatState extends State<ChatScreen> with TickerProviderStateMixin {
     });
 
     chatMessage.animationController.forward();
-    
+
     _controller.clear();
   }
 }

@@ -8,7 +8,19 @@ class ChatMessage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return buildUi(context);
+    return _transition(context);
+  }
+
+  Widget _transition(BuildContext context) {
+    return new SizeTransition(
+      sizeFactor: new CurvedAnimation(
+        parent: animationController,
+        curve: Curves.easeOut
+      ),
+      axisAlignment: 0.0,
+
+      child: buildUi(context),
+    );
   }
 
   Widget buildUi(BuildContext context) {

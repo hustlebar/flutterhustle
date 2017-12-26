@@ -29,5 +29,5 @@ final ThemeData kIOSTheme = new ThemeData(
 
 final ThemeData kDefaultTheme = new ThemeData(
   primarySwatch: Colors.purple,
-  accentColor: Colors.orangeAccent[400],
+  accentColor: Colors.orangeAccent[450],
 );

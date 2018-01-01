@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 
 part 'center.dart';
+part 'column.dart';
 
 
 class WidgetsBar extends StatelessWidget {
@@ -17,7 +18,7 @@ class WidgetsBar extends StatelessWidget {
           title: new Text('Widgets Bar'),
         ),
 
-        body: new CustomCenter(),
+        body: new CustomColumn('Hello, Flutter!'),
       ),
     );
   }

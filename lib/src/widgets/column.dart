@@ -1,7 +1,7 @@
 part of widgets;
 
 class CustomColumn extends StatelessWidget {
-  String value;
+  final String value;
   CustomColumn(this.value);
 
   @override
@@ -9,7 +9,8 @@ class CustomColumn extends StatelessWidget {
     return new Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
-        new Expanded(child: new Text(value))
+        new Expanded(child: new Text(value)),
+        new Image.asset('graphics/ic_cool.png')
       ],
     );
   }

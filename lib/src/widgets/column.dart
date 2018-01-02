@@ -1,5 +1,6 @@
 part of widgets;
 
+//Custom column implementation
 class CustomColumn extends StatelessWidget {
   final String value;
   CustomColumn(this.value);

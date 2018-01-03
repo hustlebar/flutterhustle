@@ -24,7 +24,7 @@ class WidgetsBar extends StatelessWidget {
           child: new Icon(Icons.add),
           onPressed: _onFloatingAction,
           tooltip: 'Add',
-          backgroundColor: const Color(0xFF9C27B0),
+          backgroundColor: const Color(0xFFE91E63),
         ),
       ),
     );

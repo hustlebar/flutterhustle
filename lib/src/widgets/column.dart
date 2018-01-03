@@ -10,8 +10,11 @@ class CustomColumn extends StatelessWidget {
     return new Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
-        new Expanded(child: new Text(value)),
-        new Image.asset('graphics/ic_cool.png')
+        new Text(value),
+        new Center(
+          child: new Image.asset('graphics/ic_cool.png')
+        )
+
       ],
     );
   }

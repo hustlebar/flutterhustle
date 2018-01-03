@@ -20,9 +20,19 @@ class WidgetsBar extends StatelessWidget {
         ),
 
         body: new CustomColumn('Hello, Flutter!'),
+        floatingActionButton: new FloatingActionButton(
+          child: new Icon(Icons.add),
+          onPressed: _onFloatingAction,
+          tooltip: 'Add',
+          backgroundColor: const Color(0xFF9C27B0),
+        ),
       ),
     );
   }
+}
+
+void _onFloatingAction() {
+  print("Clicked");
 }
 
 List<Widget> actions() {

@@ -26,6 +26,7 @@ class WidgetsBar extends StatelessWidget {
           tooltip: 'Add',
           backgroundColor: const Color(0xFFE91E63),
         ),
+        drawer: drawer(),
       ),
     );
   }
@@ -33,6 +34,10 @@ class WidgetsBar extends StatelessWidget {
 
 void _onFloatingAction() {
   print("Clicked");
+}
+
+Drawer drawer() {
+  return new Drawer();
 }
 
 List<Widget> actions() {

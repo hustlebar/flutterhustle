@@ -16,10 +16,26 @@ class WidgetsBar extends StatelessWidget {
       home: new Scaffold(
         appBar: new AppBar(
           title: new Text('Widgets Bar'),
+          actions: actions()
         ),
 
         body: new CustomColumn('Hello, Flutter!'),
       ),
     );
   }
+}
+
+List<Widget> actions() {
+  List<Widget> widgets = new List();
+  widgets.add(new IconButton(
+    icon: new Icon(Icons.playlist_play),
+    tooltip: 'Air it',
+  ));
+
+  widgets.add(new IconButton(
+    icon: new Icon(Icons.playlist_add),
+    tooltip: 'Restitch it',
+  ));
+
+  return widgets;
 }

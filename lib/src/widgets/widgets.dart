@@ -45,12 +45,18 @@ List<Widget> actions() {
   widgets.add(new IconButton(
     icon: new Icon(Icons.playlist_play),
     tooltip: 'Air it',
+    onPressed: onPressed,
   ));
 
   widgets.add(new IconButton(
     icon: new Icon(Icons.playlist_add),
     tooltip: 'Restitch it',
+    onPressed: onPressed,
   ));
 
   return widgets;
+}
+
+void onPressed() {
+
 }

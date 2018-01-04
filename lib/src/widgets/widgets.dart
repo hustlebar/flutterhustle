@@ -33,7 +33,7 @@ class WidgetsBar extends StatelessWidget {
 }
 
 void _onFloatingAction() {
-  print("Clicked");
+  print("Clicked!");
 }
 
 Drawer drawer() {

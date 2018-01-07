@@ -15,3 +15,7 @@ doc/api/
 .metadata
 android.iml
 *.log
+
+*.iml
+
+flutterhustle.iml

@@ -3,6 +3,7 @@ library hussle;
 import 'package:flutter/material.dart';
 
 part 'layout/hussle_scaffold.dart';
+part 'linear/hussle_button.dart';
 
 class HussleApp extends StatelessWidget {
 

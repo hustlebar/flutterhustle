@@ -6,11 +6,13 @@ class HussleButton extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return new Column(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: <Widget>[
         new Center(
           child: new RaisedButton(
             onPressed: _onRaised,
             child: new Text('Raised Button'),
+            elevation: 5.0,
           ),
         ),
 

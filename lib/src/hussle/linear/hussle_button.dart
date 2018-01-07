@@ -20,6 +20,13 @@ class HussleButton extends StatelessWidget {
             child: new Text('Flat Button'),
             color: new Color(0xFF42A5F5),
           ),
+        ),
+
+        new Center(
+          child: new IconButton(
+            icon: new Icon(Icons.widgets),
+            onPressed: _onFlat
+          ),
         )
       ],
     );

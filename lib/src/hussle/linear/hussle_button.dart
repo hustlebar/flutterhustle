@@ -29,6 +29,13 @@ class HussleButton extends StatelessWidget {
             icon: new Icon(Icons.widgets),
             onPressed: _onFlat
           ),
+        ),
+
+        new Center(
+          child: new InkWell(
+            child: new Text('Ink Well'),
+            onTap: _onFlat,
+          ),
         )
       ],
     );

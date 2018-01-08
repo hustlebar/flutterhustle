@@ -19,6 +19,7 @@ class LoginState extends State<Login> {
   Widget buildUi(BuildContext context) {
     return new Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
 
         new Center(
@@ -28,23 +29,38 @@ class LoginState extends State<Login> {
         ),
 
         new Center(
+          child: new TextFormField(
+            controller: _emailController,
+            decoration: new InputDecoration(
+              labelText: 'Email: ',
+              hintText: 'Type email'
+            ),
+          ),
+        ),
+
+        new Center(
           child: new RaisedButton(
             child: new Text('Check'),
-            onPressed: _onClicked,
+            onPressed: () => _onClicked(context),
           ),
         )
-
-
 
       ],
     );
   }
 
-  void _onClicked() {
+  void _onClicked(BuildContext context) {
     print('Button clicked');
     print(_emailController.text);
+
+    _emailController.clear();
+
+    showDialog(context);
     setState(() {
 
     });
+  }
+
+  void showDialog(BuildContext context) {
   }
 }

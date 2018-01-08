@@ -51,7 +51,8 @@ class LoginState extends State<Login> {
           ),
         ),
 
-        showPopMenuButton(context)
+        showPopMenuButton(context),
+        showCheckbox()
 
       ],
     );
@@ -98,6 +99,18 @@ class LoginState extends State<Login> {
           child: const Text('What a man'),
         )
       ]
+    );
+  }
+
+  Widget showCheckbox() {
+    bool currentValue = false;
+    return new CheckboxListTile(
+      title: new Text('Chicken'),
+      value: currentValue,
+      onChanged: (bool value)  {
+        print(value);
+        setState(() { currentValue = !value;});
+      }
     );
   }
 }

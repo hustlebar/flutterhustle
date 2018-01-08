@@ -18,6 +18,7 @@ class LoginState extends State<Login> {
 
   Widget buildUi(BuildContext context) {
     return new Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
 
         new Center(
@@ -43,7 +44,7 @@ class LoginState extends State<Login> {
     print('Button clicked');
     print(_emailController.text);
     setState(() {
-      
+
     });
   }
 }

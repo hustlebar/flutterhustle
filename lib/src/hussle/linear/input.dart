@@ -25,16 +25,8 @@ class LoginState extends State<Login> {
         new Center(
           child: new TextField(
             controller: _emailController,
-          ),
-        ),
-
-        new Center(
-          child: new TextFormField(
-            controller: _emailController,
-            decoration: new InputDecoration(
-              labelText: 'Email: ',
-              hintText: 'Type email'
-            ),
+            autocorrect: true,
+            autofocus: true,
           ),
         ),
 

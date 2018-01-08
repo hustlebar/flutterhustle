@@ -33,7 +33,12 @@ class LoginState extends State<Login> {
           ),
         ),
 
-
+        new Center(
+          child: new IconButton(
+            icon: new Icon(Icons.access_alarm),
+            onPressed: _onIconPressed
+          ),
+        ),
 
         new Center(
           child: new RaisedButton(
@@ -44,6 +49,10 @@ class LoginState extends State<Login> {
 
       ],
     );
+  }
+
+  void _onIconPressed() {
+    print('Icon pressed');
   }
 
   void _onClicked(BuildContext context) {

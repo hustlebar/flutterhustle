@@ -50,7 +50,6 @@ class LoginState extends State<Login> {
   }
 
   void _onClicked(BuildContext context) {
-    print('Button clicked');
     print(_emailController.text);
 
     _emailController.clear();

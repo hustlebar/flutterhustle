@@ -22,13 +22,18 @@ class LoginState extends State<Login> {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
 
-        new Center(
-          child: new TextField(
-            controller: _emailController,
-            autocorrect: true,
-            autofocus: true,
+        new Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: new Center(
+            child: new TextField(
+              controller: _emailController,
+              autocorrect: true,
+              autofocus: true,
+            ),
           ),
         ),
+
+
 
         new Center(
           child: new RaisedButton(

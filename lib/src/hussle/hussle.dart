@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 part 'layout/hussle_scaffold.dart';
 part 'linear/hussle_button.dart';
 part 'linear/input.dart';
+part 'linear/checkbox.dart';
 
 class HussleApp extends StatelessWidget {
 

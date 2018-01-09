@@ -1,31 +1,5 @@
 part of hussle;
 
-class HussleCheckboxWithTitle extends StatelessWidget {
-  bool rogerVal = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return new Column(
-      children: <Widget>[
-        new Center(
-          child: new CheckboxListTile(
-            title: new Text('Roger'),
-            value: rogerVal,
-            onChanged: (bool value) {
-              
-            }
-          )
-        )
-      ],
-    );
-  }
-
-  void _onRoger(bool value) {
-    rogerVal = value;
-    print('On Roger: $rogerVal');
-  }
-}
-
 class HussleCheckbox extends StatefulWidget {
 
   @override
@@ -46,7 +20,8 @@ class HussleCheckboxState extends State<HussleCheckbox> {
     return new Column(
       children: <Widget>[
         new Center(
-          child: new Checkbox(
+          child: new CheckboxListTile(
+            title: new Text('Roger'),
             value: checkboxValue,
             onChanged: (bool value) {
               setState(() {

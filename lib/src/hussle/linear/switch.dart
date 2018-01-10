@@ -31,7 +31,9 @@ class HussleSwitchState extends State<HussleSwitch> {
         setState(() {
           anotherValue = value;
         });
-      }
+      },
+      activeColor: new Color(0xFFFF9000),
+      secondary: const Icon(Icons.lightbulb_outline)
     );
 
     return new Column(

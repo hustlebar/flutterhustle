@@ -7,6 +7,7 @@ part 'linear/hussle_button.dart';
 part 'linear/input.dart';
 part 'linear/checkbox.dart';
 part 'linear/switch.dart';
+part 'linear/slider.dart';
 
 class HussleApp extends StatelessWidget {
 

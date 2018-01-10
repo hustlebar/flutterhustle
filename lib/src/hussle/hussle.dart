@@ -8,6 +8,7 @@ part 'linear/input.dart';
 part 'linear/checkbox.dart';
 part 'linear/switch.dart';
 part 'linear/slider.dart';
+part 'linear/radio.dart';
 
 class HussleApp extends StatelessWidget {
 

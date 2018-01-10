@@ -9,7 +9,7 @@ class HussleCheckbox extends StatefulWidget {
 }
 
 class HussleCheckboxState extends State<HussleCheckbox> {
-  bool checkboxValue = false;
+  bool checkboxValue = true;
 
   @override
   Widget build(BuildContext context) {

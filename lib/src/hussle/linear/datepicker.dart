@@ -35,10 +35,7 @@ class DatePickerState extends State<HussleDatePicker> {
   }
 
   Future<DateTime> _datePicker(BuildContext context) {
-    print('onClick() called');
-
     var now = new DateTime.now();
-
     var first = new DateTime(2018, 1);
     var last = new DateTime(2018, 31);
 
@@ -46,6 +43,7 @@ class DatePickerState extends State<HussleDatePicker> {
         context: context,
         initialDate: now,
         firstDate: first,
-        lastDate: last);
+        lastDate: last,
+    );
   }
 }

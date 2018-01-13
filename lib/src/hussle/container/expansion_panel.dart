@@ -11,10 +11,6 @@ class HussleExpansion extends StatelessWidget {
 
     return new Column(
       children: <Widget>[
-        new Center(
-          child: new Text('Expansion Panel'),
-        ),
-
         expansionPanels()
       ],
     );
@@ -29,9 +25,9 @@ class HussleExpansion extends StatelessWidget {
   }
 
   ExpansionPanel expansionPanel() {
-
     return new ExpansionPanel(
-      headerBuilder: null,
+      headerBuilder: (BuildContext context, bool isExpanded) =>
+        new Text(isExpanded ? "Expanded" : "Collapsed"),
       body: new Text('Expansion panel body')
     );
   }

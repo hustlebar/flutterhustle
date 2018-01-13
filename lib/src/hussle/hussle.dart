@@ -16,6 +16,7 @@ part 'linear/dialog.dart';
 part 'linear/alertdialog.dart';
 
 part 'container/expansion_panel.dart';
+part 'container/snackbar.dart';
 
 class HussleApp extends StatelessWidget {
 

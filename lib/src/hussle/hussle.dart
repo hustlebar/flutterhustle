@@ -11,6 +11,7 @@ part 'linear/switch.dart';
 part 'linear/slider.dart';
 part 'linear/radio.dart';
 part 'linear/datepicker.dart';
+part 'linear/timepicker.dart';
 
 class HussleApp extends StatelessWidget {
 

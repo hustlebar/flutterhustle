@@ -19,7 +19,7 @@ class HussleIcon extends StatelessWidget {
   Widget _buildIcon() {
     var iconData = new IconData(3000);
     return new Icon(
-      iconData,
+      Icons.print,
       color: new Color.fromRGBO(100, 200, 100, 10.0),
       size: 100.0,
     );

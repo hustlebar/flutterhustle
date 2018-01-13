@@ -15,6 +15,8 @@ part 'linear/timepicker.dart';
 part 'linear/dialog.dart';
 part 'linear/alertdialog.dart';
 
+part 'container/expansion_panel.dart';
+
 class HussleApp extends StatelessWidget {
 
   @override

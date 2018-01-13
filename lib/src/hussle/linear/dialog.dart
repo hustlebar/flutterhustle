@@ -27,28 +27,36 @@ class HussleDialog extends StatelessWidget {
     onDialog(context);
   }
 
+  void _onOption() {
+  }
+
   void onDialog(BuildContext context) {
     var dialog = new SimpleDialog(
       title: const Text('Select your location'),
       children: <Widget>[
         new SimpleDialogOption(
           child: new Text(Location.Andhra.toString()),
+          onPressed: _onOption,
         ),
 
         new SimpleDialogOption(
           child: new Text(Location.Chennai.toString()),
+          onPressed: _onOption,
         ),
 
         new SimpleDialogOption(
           child: new Text(Location.Pondycherry.toString()),
+          onPressed: _onOption,
         ),
 
         new SimpleDialogOption(
           child: new Text(Location.Kerala.toString()),
+          onPressed: _onOption,
         ),
 
         new SimpleDialogOption(
           child: new Text(Location.Karnataka.toString()),
+          onPressed: _onOption,
         )
 
       ],

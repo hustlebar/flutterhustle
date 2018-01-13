@@ -18,12 +18,18 @@ class HussleChip extends StatelessWidget {
   }
 
   Widget _buildUi() {
+    var circleBorder = new CircleBorder(
+      side: new BorderSide(width: 4.0, color: Colors.lightBlue.shade50)
+    );
+
     return new Chip(
       avatar: new Icon(Icons.widgets),
       label: new Text('Tham'),
-      onDeleted: () {
-        print('Closed');
-      },
+      backgroundColor: Colors.orangeAccent,
+//      border: circleBorder,
+//      onDeleted: () {
+//        print('Closed');
+//      },
     );
   }
 }

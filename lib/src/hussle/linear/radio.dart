@@ -42,7 +42,7 @@ class RadioState extends State<HussleRadio> {
         _onRadio(value);
       }
     );
-    
+
     return new Column(
       children: <Widget>[
 

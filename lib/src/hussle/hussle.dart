@@ -1,6 +1,7 @@
 library hussle;
 
 import 'package:flutter/material.dart';
+import 'dart:async';
 
 part 'layout/hussle_scaffold.dart';
 part 'linear/hussle_button.dart';
@@ -9,6 +10,7 @@ part 'linear/checkbox.dart';
 part 'linear/switch.dart';
 part 'linear/slider.dart';
 part 'linear/radio.dart';
+part 'linear/datepicker.dart';
 
 class HussleApp extends StatelessWidget {
 

@@ -19,7 +19,10 @@ class HussleChip extends StatelessWidget {
 
   Widget _buildUi() {
 //    var circleBorder = new CircleBorder(
-//      side: new BorderSide(width: 4.0, color: Colors.lightBlue.shade50)
+//      side: new BorderSide(
+//        width: 4.0,
+//        color: Colors.lightBlue.shade50
+//      )
 //    );
 
     return new Chip(

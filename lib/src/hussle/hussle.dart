@@ -19,6 +19,7 @@ part 'linear/chip.dart';
 
 part 'container/expansion_panel.dart';
 part 'container/snackbar.dart';
+part 'container/datatable.dart';
 
 class HussleApp extends StatelessWidget {
 

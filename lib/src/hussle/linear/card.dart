@@ -23,7 +23,7 @@ class HussleCard extends StatelessWidget {
         children: <Widget>[
           new ListTile(
             leading: const Icon(Icons.account_box),
-            title: const Text('Hello Card'),
+            title: const Text('Card'),
           )
 
 

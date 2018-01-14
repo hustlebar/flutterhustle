@@ -10,6 +10,8 @@ class HussleCard extends StatelessWidget {
   Widget _buildUi() {
     return new Column(
       children: <Widget>[
+        _buildCard(),
+        _buildCard(),
         _buildCard()
       ],
     );
@@ -27,6 +29,7 @@ class HussleCard extends StatelessWidget {
 
         ],
       ),
+      elevation: 5.0,
     );
   }
 }

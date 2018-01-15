@@ -26,6 +26,10 @@ part 'container/datatable.dart';
 part 'container/list_tile.dart';
 part 'container/stepper.dart';
 
+part 'navigation/main.dart';
+part 'navigation/first.dart';
+part 'navigation/second.dart';
+
 class HussleApp extends StatelessWidget {
 
   @override
@@ -33,6 +37,11 @@ class HussleApp extends StatelessWidget {
     return new MaterialApp(
       title: 'Hussle Bar',
       home: new HussleScaffold(),
+      routes: <String, WidgetBuilder> {
+        'main': (BuildContext context) => new MainPage(),
+        'first': (BuildContext context) => new FirstPage(),
+        'second': (BuildContext context) => new SecondPage()
+      },
     );
   }
 }

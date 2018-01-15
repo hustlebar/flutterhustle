@@ -23,6 +23,7 @@ part 'container/expansion_panel.dart';
 part 'container/snackbar.dart';
 part 'container/datatable.dart';
 part 'container/list_tile.dart';
+part 'container/stepper.dart';
 
 class HussleApp extends StatelessWidget {
 

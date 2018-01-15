@@ -17,6 +17,7 @@ part 'linear/alertdialog.dart';
 part 'linear/icon.dart';
 part 'linear/chip.dart';
 part 'linear/card.dart';
+part 'linear/progress.dart';
 
 part 'container/expansion_panel.dart';
 part 'container/snackbar.dart';

@@ -22,6 +22,7 @@ part 'linear/progress.dart';
 part 'container/expansion_panel.dart';
 part 'container/snackbar.dart';
 part 'container/datatable.dart';
+part 'container/list_tile.dart';
 
 class HussleApp extends StatelessWidget {
 

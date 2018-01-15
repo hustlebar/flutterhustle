@@ -20,7 +20,8 @@ class HussleStepper extends StatelessWidget {
         print('Called');
         _onTapped(value);
       },
-      onStepContinue: _onContinue ,
+      onStepContinue: _onContinue,
+      onStepCancel: _onCancel,
     );
 
     return stepper;
@@ -49,5 +50,9 @@ class HussleStepper extends StatelessWidget {
     print('Enters _onContinue()');
     
     print('Current step ${this.stepper.currentStep}');
+  }
+
+  void _onCancel() {
+    print('Enters _onCancel()');
   }
 }

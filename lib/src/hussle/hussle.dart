@@ -18,6 +18,7 @@ part 'linear/icon.dart';
 part 'linear/chip.dart';
 part 'linear/card.dart';
 part 'linear/progress.dart';
+part 'linear/divider.dart';
 
 part 'container/expansion_panel.dart';
 part 'container/snackbar.dart';

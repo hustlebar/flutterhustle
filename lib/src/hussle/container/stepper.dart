@@ -11,14 +11,19 @@ class HussleStepper extends StatelessWidget {
     return _buildStepper();
   }
 
+  Stepper stepper;
+
   Stepper _buildStepper() {
-    return new Stepper(
+    this.stepper = new Stepper(
       steps: _buildSteps(),
       onStepTapped: (int value) {
         print('Called');
         _onTapped(value);
       },
+      onStepContinue: _onContinue ,
     );
+
+    return stepper;
   }
 
   List<Step> _buildSteps() {
@@ -38,5 +43,11 @@ class HussleStepper extends StatelessWidget {
 
   void _onTapped(int value) {
     print('Enters _onStepTapped() for $value');
+  }
+  
+  void _onContinue() {
+    print('Enters _onContinue()');
+    
+    print('Current step ${this.stepper.currentStep}');
   }
 }

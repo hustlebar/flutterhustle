@@ -16,9 +16,11 @@ class _FavoriteState extends State<FavoriteWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return new Row(
-      mainAxisSize: MainAxisSize.min,
-      children: _buildUi(),
+    return new Center(
+      child: new Row(
+        mainAxisSize: MainAxisSize.min,
+        children: _buildUi(),
+      ),
     );
   }
 

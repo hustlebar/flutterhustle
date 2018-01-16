@@ -1,14 +1,18 @@
 part of hussle;
 
 class FavoriteWidget extends StatefulWidget {
+  int count;
+  FavoriteWidget(this.count);
 
   @override
-  _FavoriteState createState() => new _FavoriteState();
+  _FavoriteState createState() => new _FavoriteState(count);
 }
 
 class _FavoriteState extends State<FavoriteWidget> {
   bool isFavorite = false;
-  int count = 10;
+  int count;
+
+  _FavoriteState(this.count);
 
   @override
   Widget build(BuildContext context) {

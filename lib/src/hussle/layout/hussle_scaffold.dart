@@ -29,7 +29,7 @@ class HussleScaffold extends StatelessWidget {
       floatingActionButton: new FloatingActionButton(
         child: new Icon(Icons.add),
         onPressed: () {
-          Navigator.of(context).pop();
+          Navigator.of(context).pushNamed('first');
         }
       ),
     );

@@ -17,6 +17,7 @@ class _FavoriteState extends State<FavoriteWidget> {
   @override
   Widget build(BuildContext context) {
     return new Row(
+      mainAxisSize: MainAxisSize.min,
       children: _buildUi(),
     );
   }
@@ -36,7 +37,13 @@ class _FavoriteState extends State<FavoriteWidget> {
 
     children.add(new SizedBox(
       width: 20.0,
-      child: new Text('$count'),
+      child: new Text('$count',
+        style: const TextStyle(
+          fontSize: 18.0,
+          fontWeight: FontWeight.bold,
+          color: const Color.fromRGBO(200, 0, 200, 0.75)
+        ),
+      ),
     ));
 
     return children;

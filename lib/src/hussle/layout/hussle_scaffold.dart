@@ -25,7 +25,7 @@ class HussleScaffold extends StatelessWidget {
 
     return new Scaffold(
       appBar: new AppBar(title: new Text('Hussle Bar'),),
-      body: new MainPage(),
+      body: new FavoriteWidget(),
       floatingActionButton: new FloatingActionButton(
         child: new Icon(Icons.add),
         onPressed: () {

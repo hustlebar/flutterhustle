@@ -30,6 +30,8 @@ part 'navigation/main.dart';
 part 'navigation/first.dart';
 part 'navigation/second.dart';
 
+part 'custom/favorite.dart';
+
 class HussleApp extends StatelessWidget {
 
   @override

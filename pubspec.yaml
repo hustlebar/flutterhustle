@@ -58,3 +58,9 @@ flutter:
   #
   # For details regarding fonts from package dependencies, 
   # see https://flutter.io/custom-fonts/#from-packages
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/roboto/Roboto-Light.ttf
+        - asset: fonts/roboto/Roboto-Regular.ttf

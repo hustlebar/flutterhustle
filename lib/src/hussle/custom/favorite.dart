@@ -42,9 +42,20 @@ class _FavoriteState extends State<FavoriteWidget> {
         style: const TextStyle(
           fontSize: 18.0,
           fontWeight: FontWeight.bold,
-          color: const Color.fromRGBO(200, 0, 200, 0.75)
+          color: const Color.fromRGBO(200, 0, 200, 0.75),
+          fontFamily: 'Roboto'
         ),
       ),
+    ));
+
+    children.add(new Text(
+      'My name is Tham',
+      style: const TextStyle(
+        fontSize: 20.0,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'Roboto'
+      )
+
     ));
 
     return children;

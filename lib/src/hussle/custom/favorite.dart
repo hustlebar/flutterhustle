@@ -1,5 +1,4 @@
 part of hussle;
-
 class FavoriteWidget extends StatefulWidget {
   int count;
   FavoriteWidget(this.count);

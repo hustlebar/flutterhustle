@@ -58,6 +58,22 @@ class _FavoriteState extends State<FavoriteWidget> {
 
     ));
 
+    children.add(new Container(
+      width: 64.0,
+      child: new Image.asset('graphics/ic_happy.png'),
+    ));
+
+//    children.add(new Container(
+//      width: 64.0,
+//      child: new DecoratedBox(
+//        decoration: new BoxDecoration(
+//          image: new DecorationImage(
+//            image: new AssetImage('graphics/ic_happy.png')
+//          ),
+//        )
+//      )
+//    ));
+
     return children;
   }
 

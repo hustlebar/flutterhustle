@@ -63,6 +63,11 @@ class _FavoriteState extends State<FavoriteWidget> {
       child: new Image.asset('graphics/ic_happy.png'),
     ));
 
+    children.add(new Container(
+      width: 32.0,
+      child: new Image.asset('graphics/ic_cool.png'),
+    ));
+
 //    children.add(new Container(
 //      width: 64.0,
 //      child: new DecoratedBox(

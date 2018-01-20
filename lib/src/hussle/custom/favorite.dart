@@ -37,7 +37,7 @@ class _FavoriteState extends State<FavoriteWidget> {
     ));
 
     children.add(new SizedBox(
-      width: 20.0,
+      width: 25.0,
       child: new Text('$count',
         style: const TextStyle(
           fontSize: 18.0,

@@ -6,7 +6,7 @@ class HussleScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(title: new Text('Hussle Bar'),),
-      body: new FavoriteWidget(5),
+      body: new HussleTextField(),
       floatingActionButton: new FloatingActionButton(
         child: new Icon(Icons.add),
         onPressed: () {

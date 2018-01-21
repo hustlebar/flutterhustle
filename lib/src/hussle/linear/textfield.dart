@@ -5,10 +5,10 @@ class HussleTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return _buildUi();
+    return _buildUi(context);
   }
 
-  Widget _buildUi() {
+  Widget _buildUi(BuildContext context) {
     TextField textField = new TextField(
       controller: _controller,
     );
@@ -24,6 +24,13 @@ class HussleTextField extends StatelessWidget {
             child: const Text('Click me'),
             onPressed: _onClick
           ),
+        ),
+
+        new Center(
+          child: new RaisedButton(
+            child: const Text('Page route'),
+            onPressed: () =>_onRoute(context)
+          ),
         )
       ],
     );
@@ -32,5 +39,24 @@ class HussleTextField extends StatelessWidget {
   _onClick() {
     print('Value is: ${_controller.text}');
     _controller.clear();
+  }
+
+  _onRoute(BuildContext context) async {
+    bool value = await Navigator.of(context).push(
+      new MaterialPageRoute<bool>(
+        builder: (BuildContext cxt) {
+          return new Center(
+            child: new GestureDetector(
+              child: const Text('Ok'),
+              onTap: () {
+                Navigator.of(context).pop(true);
+              },
+            ),
+          );
+        }
+      )
+    );
+
+    print('value: $value');
   }
 }

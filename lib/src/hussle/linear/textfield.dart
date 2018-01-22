@@ -21,17 +21,21 @@ class HussleTextField extends StatelessWidget {
 
         new Center(
           child: new RaisedButton(
-            child: const Text('Click me'),
+            child: const Text('Click'),
             onPressed: _onClick
           ),
         ),
 
-        new Center(
-          child: new RaisedButton(
-            child: const Text('Page route'),
-            onPressed: () =>_onRoute(context)
+        new Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: new Center(
+            child: new RaisedButton(
+              child: const Text('Page route'),
+              onPressed: () =>_onRoute(context)
+            ),
           ),
-        )
+        ),
+
       ],
     );
   }

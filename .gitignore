@@ -19,3 +19,5 @@ android.iml
 *.iml
 
 flutterhustle.iml
+
+.flutter-plugins

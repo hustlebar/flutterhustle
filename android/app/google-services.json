@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "364685082136",
+    "firebase_url": "https://work-rituals.firebaseio.com",
+    "project_id": "work-rituals",
+    "storage_bucket": "work-rituals.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364685082136:android:0ca46c67134c70fb",
+        "android_client_info": {
+          "package_name": "com.yourcompany.flutterhustle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364685082136-jjddd6pg7fnp86r6d29d7bgo4qc9lf1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANJAzkO6OXxVlgOM7DJnuA2c_IyKgwp78"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

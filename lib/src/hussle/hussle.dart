@@ -3,6 +3,8 @@ library hussle;
 import 'package:flutter/material.dart';
 import 'dart:async';
 
+import 'package:google_sign_in/google_sign_in.dart';
+
 part 'layout/hussle_scaffold.dart';
 part 'linear/hussle_button.dart';
 part 'linear/input.dart';

@@ -21,8 +21,8 @@ class HussleTextField extends StatelessWidget {
 
         new Center(
           child: new RaisedButton(
-            child: const Text('Click'),
-            onPressed: _onClick
+            child: const Text('Google Signin'),
+            onPressed: _onSignin
           ),
         ),
 
@@ -40,9 +40,18 @@ class HussleTextField extends StatelessWidget {
     );
   }
 
-  _onClick() {
-    print('Value is, ${_controller.text}');
-    _controller.clear();
+  _onSignin() async {
+    print('Enters _onSignin()');
+//    print('Value is, ${_controller.text}');
+//    _controller.clear();
+
+    var currentUser = googleSignIn.currentUser;
+    if (currentUser == null)
+      currentUser = await googleSignIn.signInSilently();
+
+    if (currentUser == null)
+      await googleSignIn.signIn();
+
   }
 
   _onRoute(BuildContext context) async {

@@ -20,3 +20,5 @@ class HussleScaffold extends StatelessWidget {
     print('Floating action clicked');
   }
 }
+
+final googleSignIn = new GoogleSignIn();

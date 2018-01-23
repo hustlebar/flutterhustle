@@ -50,7 +50,9 @@ class HussleTextField extends StatelessWidget {
       currentUser = await googleSignIn.signInSilently();
 
     if (currentUser == null)
-      await googleSignIn.signIn();
+      currentUser = await googleSignIn.signIn();
+
+    print('After signin ${currentUser.email}');
 
   }
 

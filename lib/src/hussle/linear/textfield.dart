@@ -61,10 +61,15 @@ class HussleTextField extends StatelessWidget {
 
     if (await auth.currentUser() == null) {
       GoogleSignInAuthentication credentials = await googleSignIn.currentUser.authentication;
-      await auth.signInWithGoogle(
+      var firebaseUser = await auth.signInWithGoogle(
         idToken: credentials.idToken,
         accessToken: credentials.accessToken
       );
+
+      print('User ${firebaseUser.email}');
+    } else {
+      var firebaseUser = await auth.currentUser();
+      print('Logged in user: ${firebaseUser.email}');
     }
   }
 

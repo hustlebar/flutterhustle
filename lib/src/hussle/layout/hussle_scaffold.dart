@@ -22,3 +22,5 @@ class HussleScaffold extends StatelessWidget {
 }
 
 final googleSignIn = new GoogleSignIn();
+final analytics = new FirebaseAnalytics();
+final auth = FirebaseAuth.instance;

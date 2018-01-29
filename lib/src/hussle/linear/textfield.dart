@@ -2,6 +2,7 @@ part of hussle;
 
 class HussleTextField extends StatelessWidget {
   final TextEditingController _controller = new TextEditingController();
+  var currentUser;
 
   @override
   Widget build(BuildContext context) {
@@ -45,20 +46,31 @@ class HussleTextField extends StatelessWidget {
 //    print('Value is, ${_controller.text}');
 //    _controller.clear();
 
-    var currentUser = googleSignIn.currentUser;
+    currentUser = googleSignIn.currentUser;
     print('Current user after first attempt $currentUser');
-    
+
     if (currentUser == null)
       currentUser = await googleSignIn.signInSilently();
 
     if (currentUser == null)
       currentUser = await googleSignIn.signIn();
 
+    analytics.logLogin();
+
     print('After signin -> $currentUser');
 
+    if (await auth.currentUser() == null) {
+      GoogleSignInAuthentication credentials = await googleSignIn.currentUser.authentication;
+      await auth.signInWithGoogle(
+        idToken: credentials.idToken,
+        accessToken: credentials.accessToken
+      );
+    }
   }
 
   _onRoute(BuildContext context) async {
+    print('Here user: $currentUser');
+
     bool value = await Navigator.of(context).push(
       new MaterialPageRoute<bool>(
         builder: (BuildContext cxt) {
@@ -75,5 +87,7 @@ class HussleTextField extends StatelessWidget {
     );
 
     print('value() $value');
+
+    analytics.logEvent(name: 'Navigation_clicked');
   }
 }

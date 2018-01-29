@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 part 'layout/hussle_scaffold.dart';
 part 'linear/hussle_button.dart';

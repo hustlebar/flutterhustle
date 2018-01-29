@@ -46,13 +46,15 @@ class HussleTextField extends StatelessWidget {
 //    _controller.clear();
 
     var currentUser = googleSignIn.currentUser;
+    print('Current user after first attempt $currentUser');
+    
     if (currentUser == null)
       currentUser = await googleSignIn.signInSilently();
 
     if (currentUser == null)
       currentUser = await googleSignIn.signIn();
 
-    print('After signin -> ${currentUser.email}');
+    print('After signin -> $currentUser');
 
   }
 

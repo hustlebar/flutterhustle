@@ -55,10 +55,12 @@ class HussleTextField extends StatelessWidget {
     print('Enters _onSave()');
     
     var usersRef = dbRef.child('users');
-    usersRef.push().set({
+    var response = await usersRef.push().set({
       'email': 'tham@gmail.com',
       'place': 'Chennai'
     });
+
+    print('Response: $response');
   }
 
   _onSignin() async {

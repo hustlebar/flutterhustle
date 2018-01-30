@@ -26,3 +26,4 @@ final analytics = new FirebaseAnalytics();
 final auth = FirebaseAuth.instance;
 
 final dbRef = FirebaseDatabase.instance.reference();
+var storageRef = FirebaseStorage.instance.ref();

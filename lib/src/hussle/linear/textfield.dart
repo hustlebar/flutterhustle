@@ -37,8 +37,28 @@ class HussleTextField extends StatelessWidget {
           ),
         ),
 
+        new Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: new Center(
+            child: new RaisedButton(
+              child: const Text('Save data'),
+              onPressed: _onSave
+            ),
+          ),
+        )
+
       ],
     );
+  }
+
+  _onSave() async {
+    print('Enters _onSave()');
+    
+    var usersRef = dbRef.child('users');
+    usersRef.push().set({
+      'email': 'tham@gmail.com',
+      'place': 'Chennai'
+    });
   }
 
   _onSignin() async {

@@ -45,10 +45,23 @@ class HussleTextField extends StatelessWidget {
               onPressed: _onSave
             ),
           ),
+        ),
+
+        new Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: new Center(
+            child: new IconButton(
+              icon: new Icon(Icons.camera),
+              onPressed: _onSaveImage
+            ),
+          ),
         )
 
       ],
     );
+  }
+
+  _onSaveImage() async {
   }
 
   _onSave() async {

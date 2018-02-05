@@ -5,6 +5,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^0.1.0
+  image_picker: ^0.2.1
   google_sign_in: 0.3.1                                           # new
   firebase_analytics: 0.0.4                                       # new
   firebase_auth: 0.2.0                                            # new

@@ -62,6 +62,7 @@ class HussleTextField extends StatelessWidget {
   }
 
   _onSaveImage() async {
+    print('Enters _onSaveImage()');
   }
 
   _onSave() async {

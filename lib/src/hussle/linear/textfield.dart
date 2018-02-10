@@ -70,7 +70,7 @@ class HussleTextField extends StatelessWidget {
     
     var usersRef = dbRef.child('users');
     var response = await usersRef.push().set({
-      'email': 'tham@gmail.com',
+      'email': 'thamizh@gmail.com',
       'place': 'Chennai'
     });
 

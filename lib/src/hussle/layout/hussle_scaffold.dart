@@ -17,7 +17,7 @@ class HussleScaffold extends StatelessWidget {
   }
 
   void onActionClicked() {
-    print('Floating action clicked....');
+    print('Floating action clicked...');
   }
 }
 

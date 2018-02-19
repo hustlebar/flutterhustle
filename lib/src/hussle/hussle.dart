@@ -33,6 +33,7 @@ part 'container/snackbar.dart';
 part 'container/datatable.dart';
 part 'container/list_tile.dart';
 part 'container/stepper.dart';
+part 'container/list_view.dart';
 
 part 'navigation/main.dart';
 part 'navigation/first.dart';
@@ -46,7 +47,7 @@ class HussleApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'Hussle Bar',
-      home: new HussleScaffold(),
+      home: new HussleListView(),
       routes: <String, WidgetBuilder> {
         'main': (BuildContext context) => new MainPage(),
         'first': (BuildContext context) => new FirstPage(),

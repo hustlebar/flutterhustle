@@ -1,6 +1,6 @@
 part of hussle;
 class FavoriteWidget extends StatefulWidget {
-  int count;
+  final int count;
   FavoriteWidget(this.count);
 
   @override

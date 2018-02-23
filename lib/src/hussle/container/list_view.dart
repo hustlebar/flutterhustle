@@ -18,8 +18,12 @@ class HussleListView extends StatelessWidget {
   }
 
   Widget _buildListView(BuildContext context) {
-    return new ListView(
-      children: _children(),
+    return new Column(
+      children: <Widget>[
+        new ListView(
+          children: _children(),
+        )
+      ],
     );
   }
 

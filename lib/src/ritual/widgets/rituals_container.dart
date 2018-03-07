@@ -14,7 +14,7 @@ class RitualsContainer extends StatelessWidget {
       decoration: new BoxDecoration(
           image: new DecorationImage(
               image: new ExactAssetImage(imagePath),
-              fit: BoxFit.scaleDown
+              fit: BoxFit.cover
           )
       ),
     );

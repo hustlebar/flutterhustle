@@ -8,7 +8,13 @@ class WelcomePage extends StatelessWidget {
 
   Widget _buildUi() {
     return new Scaffold(
-      body: new RitualsContainer('graphics/background.jpg'),
+      body: Stack(
+        alignment: AlignmentDirectional.center,
+        children: <Widget>[
+          RitualsContainer('graphics/background.jpg'),
+          Text('Work Rituals')
+        ],
+      ),
     );
   }
 }

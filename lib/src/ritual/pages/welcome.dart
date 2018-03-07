@@ -7,11 +7,8 @@ class WelcomePage extends StatelessWidget {
   }
 
   Widget _buildUi() {
-    return Scaffold(
-      backgroundColor: Color(Colors.amberAccent.value),
-      body: Center(
-        child: Text('Rituals'),
-      ),
+    return new Scaffold(
+      body: new RitualsContainer('graphics/background.jpg'),
     );
   }
 }

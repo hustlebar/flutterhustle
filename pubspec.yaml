@@ -39,6 +39,7 @@ flutter:
     - graphics/ic_cool.png
     - graphics/ic_confused.png
     - graphics/ic_happy.png
+    - graphics/background.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

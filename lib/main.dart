@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'src/hussle/hussle.dart';
+import 'src/ritual/rituals.dart';
 
-void main() => runApp(new HussleApp());
+void main() => runApp(new RitualsApp());

@@ -7,8 +7,11 @@ class WelcomePage extends StatelessWidget {
   }
 
   Widget _buildUi() {
-    return Center(
-      child: Text('Rituals'),
+    return Scaffold(
+      backgroundColor: Color(Colors.amberAccent.value),
+      body: Center(
+        child: Text('Rituals'),
+      ),
     );
   }
 }

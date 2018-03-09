@@ -1,6 +1,7 @@
 library rituals;
 
 import 'package:flutter/material.dart';
+import 'package:rituals/rituals.dart';
 
 part 'pages/welcome.dart';
 

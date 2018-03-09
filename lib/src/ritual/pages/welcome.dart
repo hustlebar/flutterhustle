@@ -11,7 +11,7 @@ class WelcomePage extends StatelessWidget {
       body: Stack(
         alignment: AlignmentDirectional.topCenter,
         children: <Widget>[
-          RitualButton()
+          new RitualsText('From the module.')
         ],
       ),
     );

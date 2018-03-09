@@ -7,6 +7,7 @@ part 'pages/welcome.dart';
 //widgets module
 part 'widgets/rituals_container.dart';
 part 'widgets/ritual_text.dart';
+part 'widgets/ritual_button.dart';
 
 class RitualsApp extends StatelessWidget {
   @override

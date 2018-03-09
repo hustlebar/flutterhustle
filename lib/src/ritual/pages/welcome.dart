@@ -7,7 +7,7 @@ class WelcomePage extends StatelessWidget {
   }
 
   Widget _buildUi() {
-    return new Scaffold(
+    return Scaffold(
       body: Stack(
         alignment: AlignmentDirectional.center,
         children: <Widget>[

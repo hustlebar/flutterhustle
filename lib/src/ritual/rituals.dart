@@ -15,9 +15,9 @@ class RitualsApp extends StatelessWidget {
   }
 
   Widget _buildUi() {
-    return new MaterialApp(
+    return MaterialApp(
       title: 'Rituals',
-      home: new WelcomePage(),
+      home: WelcomePage(),
     );
   }
 }

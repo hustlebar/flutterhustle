@@ -1,4 +1,5 @@
-part of rituals;
+import 'package:flutter/material.dart';
+import 'package:rituals/rituals.dart';
 
 class WelcomePage extends StatelessWidget {
   @override
@@ -12,14 +13,10 @@ class WelcomePage extends StatelessWidget {
         alignment: AlignmentDirectional.topCenter,
         children: <Widget>[
           Center(
-            child: RitualsButton('Click', _onPressed),
+            child: RitualsField()
           )
         ],
       ),
     );
-  }
-
-  _onPressed() {
-    print('enters _onPressed()');
   }
 }

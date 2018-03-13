@@ -12,10 +12,14 @@ class WelcomePage extends StatelessWidget {
         alignment: AlignmentDirectional.topCenter,
         children: <Widget>[
           Center(
-            child: RitualsIcon(),
+            child: RitualsButton('Click', _onPressed),
           )
         ],
       ),
     );
+  }
+
+  _onPressed() {
+    print('enters _onPressed()');
   }
 }
